@@ -1,0 +1,14 @@
+div {
+    height:100px;
+    width:100px;
+    /*background-color:lightgreen;*/
+}
+
+.kotak{
+    background-color:blue;
+    height:50px;
+}
+
+#circle{
+    border-radius:100%;
+}
