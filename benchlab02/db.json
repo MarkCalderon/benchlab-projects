@@ -1,0 +1,60 @@
+{
+  "posts": [
+    {
+      "title": "First Post 🤣",
+      "author": "Mark Calderon",
+      "id": 1
+    },
+    {
+      "title": "Mark Calderon",
+      "body": "Yeah!!!💕",
+      "id": 2
+    },
+    {
+      "title": "New Post",
+      "body": "Another new post",
+      "id": 4
+    },
+    {
+      "title": "New Post",
+      "body": "Another new post",
+      "id": 5
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": "1"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "staff": [
+    {
+      "name": "Hello",
+      "bio": "Hello",
+      "id": 1
+    },
+    {
+      "name": "Mark",
+      "bio": "Mark",
+      "id": 2
+    },
+    {
+      "name": "helllllllo",
+      "bio": "helllllllo",
+      "id": 3
+    },
+    {
+      "name": "Angelo",
+      "bio": "Hello World",
+      "new-dateJoined": "2018-12-14",
+      "gender": "female",
+      "perk": "companycar",
+      "expected": "4378",
+      "id": 4
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IT World Enterprise</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+            <form id="search" action="http://localhost:3000/staff" method="get" >
+                <h1>Staff Management</h1>
+                <div class="form-group">
+                <input type="text" name="name" id="name" placeholder="type what you want?">
+                <button type="submit">🔎Search</button>
+                </div>
+            </form>
+
+            <picture>
+                <source srcset="http://placekitten.com/600/200" alt="kitten" media="(max-width:600px)">
+                <source srcset="http://placekitten.com/1500/650" alt="kitten" media="(max-width:1500px)">
+                <source srcset="http://placekitten.com/500/300">
+                <img src="https://placekitten.com/600/200" alt="kitty">
+            </picture>
+
+            <form id="hire" action="http://localhost:3000/staff" method="post">
+                <h2>Hire New Staff</h2>
+                <label for="new-name">Name of New Staff:</label>
+                <input type="text" name="name" required id="name">
+                <label for="new-bio">Enter Staff Biography:</label>
+                <input type="text" name="bio" id="bio">
+                <label for="new-dateJoined">Date of Birth:</label>
+                <input type="date" name="new-dateJoined" id="new-dateJoined">
+                <select name="gender" id="gender">
+                    <option value="male" selected>Male</option>
+                    <option value="female">Female</option>
+                </select>
+                <br>
+                <input type="radio" name="perk" id="perk" value="leaves" checked> Leaves <br>
+                <input type="radio" name="perk" id="perk" value="companycar"> Company car <br>
+                <input type="radio" name="perk" id="perk" value="companyphone"> Company Phone <br>
+                <input type="radio" name="perk" id="perk" value="salary"> Increment Salary <br>
+                <label for="expectedsalary">Expected Salary:</label>
+                <input type="range" name="expected" id="expected" min="1000" max="5000"><br>
+                <button type="submit">✏ Add New Staff</button>
+                <button onclick="hideForm()" id="closeForm">X</button>  
+            </form>
+
+                <table id="staff" border="1" cellpadding="0"></table>
+    <div class="newBtn">
+        <button onclick="showForm()" id="openForm">+</button>
+    </div>
+    <script src="staff.js"></script>
+    <script src="form.js"></script>
+</body>
+</html>
